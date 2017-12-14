@@ -7,3 +7,5 @@ filename = params[1]
 with open(filename) as file_object:
     data_list = json.load(file_object)
 print(data_list)
+for each in data_list:
+    print(each.get("key"))
